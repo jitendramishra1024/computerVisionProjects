@@ -7,13 +7,13 @@ Contains computer vision projects
    This contains below things 
    
    
-   01. Basic Reading and writing of image Using Open CV
+   A. Basic Reading and writing of image Using Open CV
    
-   02. Provided an image detect whether the subect is smiling or not , detects eyes and face as well 
+   B. Provided an image detect whether the subect is smiling or not , detects eyes and face as well 
    
-   03. Detection of image face and smile from web cam 
+   C. Detection of image face and smile from web cam 
    
-   04.Detection of Cars from video 
+   D.Detection of Cars from video 
    
-   05.Detection of full body i.e people walking on the road 
+   E.Detection of full body i.e people walking on the road 
    
