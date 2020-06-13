@@ -22,6 +22,7 @@ Contains computer vision projects
    GOAL is to predict a given gesture is rock paper scissor or any other image 
    
    Training data :
+   https://drive.google.com/drive/folders/1BeWxn4wd2t7Idx6G8XFhQuSQ5bxW-25n?usp=sharing
 
    CONTENTS: The dataset contains a total of 2188 images corresponding to the 
    'Rock' (726 images), 
