@@ -33,6 +33,15 @@ Contains computer vision projects
    FORMAT: All images are RGB images of 300 pixels wide by 200 pixels high in .png format. The images are separated in three sub-folders named 'rock', 'paper' and 'scissors' according to their respective class.
    
    We have one folder for individual prediction as well
+   How to use :
+   1. To train the model 
+   put dataset.zip in MyDrive/colabNotebooks
+   and run RPS_Classifier_CNN .ipynb
+   2.To do individual prediction 
+   use  rps_individual_prediction folder  in google MyDrive/colabNotebooks
+   3.To predict using saved model 
+   use RPS_Individual_prediction
+   
    
 
 
