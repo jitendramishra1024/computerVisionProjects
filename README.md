@@ -42,6 +42,10 @@ Contains computer vision projects
    3.To predict using saved model 
    use RPS_Individual_prediction
    
+03. Rock paper scissor game using webcam 
+
+Details we will go after leraning transfer leraning 
+   
    
 
 
