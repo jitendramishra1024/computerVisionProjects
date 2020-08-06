@@ -9,6 +9,7 @@ from tensorflow.python.keras.models import load_model
 import cv2
 import numpy as np
 import tensorflow as tf
+import keras.backend as K
 
 model = load_model("rock-paper-scissors-model.h5")
 cap = cv2.VideoCapture(0)
@@ -37,19 +38,27 @@ while True:
     img = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, (300, 200))
     img = tf.cast(img, tf.float32)
-   # predict the move made
+   # # predict the move made
     pred = model.predict(np.array([img]))
     move_code = np.argmax(pred[0])
     user_move_name = mapper(move_code)
+    K.clear_session()
+    
+    #user_move_name="XX"
     
         # display the information
     font = cv2.FONT_HERSHEY_SIMPLEX
     cv2.putText(frame, "Your Move: " + user_move_name,
                 (50, 50), font, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
-    k = cv2.waitKey(10)
+    k = cv2.waitKey(100)
     cv2.imshow("Rock Paper Scissors", frame)
     if k == ord('q'):
         break
+    
 
 cap.release()
 cv2.destroyAllWindows()
+
+
+
+
